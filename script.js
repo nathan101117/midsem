@@ -14,18 +14,18 @@ menu.forEach((dish, index) => {
     console.log((index + 1) + ". " + dish); // Numbering of menu items
 });
 
-// Adding a New Dish
-setTimeout(() => {
-    let newDish = prompt("Suggest a new dish:"); // Ask for a new dish suggestion only AFTER the menu is shown
-    
-let newDish = prompt("Suggest a new dish:"); // Ask the user for a new dish
+// Adding a New Dish (after 10 seconds)
+setTimeout(function() {
+    let newDish = prompt("Suggest a new dish:"); // Ask the user for a new dish
 
-if (newDish) {  
-    menu.push(newDish); // Add the new dish to the menu
-    console.log("Updated Menu:"); // Show the updated menu
-    menu.forEach((dish, index) => {
-        console.log((index + 1) + ". " + dish); // Print the new and updated menu
-    });
-} else {
-    console.log("No dish added."); // If it was empty, tell the user nothing was added
-}
+    if (newDish) {  
+        menu.push(newDish); // Add the new dish to the menu
+        console.log("Updated Menu:"); // Show the updated menu
+        menu.forEach((dish, index) => {
+            console.log((index + 1) + ". " + dish); // Print the new and updated menu
+        });
+    } else {
+        console.log("No dish added."); // If it was empty, tell the user nothing was added
+    }
+}, 10000); // 10,000 milliseconds = 10 seconds
+
