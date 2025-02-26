@@ -8,7 +8,7 @@ if (!userName) {
 alert("Welcome to EatNow cafe, " + userName + "!");
 
 // Display Menu Items
-let menu = ["Grilled Chicken", "Pasta Alfredo", "Veggie Burger", "Caesar Salad", "Tomato Soup"];
+let menu = ["Grilled Chicken", "Ugali", "Chapati", "Rice", "Chips"];
 console.log("EatNow Cafe Menu:");
 menu.forEach((dish, index) => {
     console.log((index + 1) + ". " + dish);
