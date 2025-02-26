@@ -27,4 +27,4 @@ setTimeout(function() {
     } else {
         console.log("No dish added."); // If it was empty, tell the user nothing was added
     }
-}, 10000); // Wait 10 seconds (10,000 milliseconds) before showing the prompt
+}, 10000); // Wait 10 seconds before showing the prompt
