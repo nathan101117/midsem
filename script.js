@@ -15,6 +15,9 @@ menu.forEach((dish, index) => {
 });
 
 // Adding a New Dish
+setTimeout(() => {
+    let newDish = prompt("Suggest a new dish:"); // Ask for a new dish suggestion only AFTER the menu is shown
+    
 let newDish = prompt("Suggest a new dish:"); // Ask the user for a new dish
 
 if (newDish) {  
