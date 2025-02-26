@@ -1,0 +1,30 @@
+/* Make text readable */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Style header */
+header {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+/* Remove bullet points from menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Space out menu links */
+nav li {
+    display: inline;
+    margin: 10px;
+}
+
+/* Style footer */
+footer {
+    background-color: lightgray;
+    padding: 5px;
+    margin-top: 20px;
+}
